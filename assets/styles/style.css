@@ -1,5 +1,8 @@
+/* Importação de fontes externas. */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap');
+
 /* Configurações gerais da página. */
-/*Definição da fonte e reset da margem. */
+/* Definição da fonte e reset da margem. */
 * {
     font-family: 'Raleway', sans-serif;
     margin: 0;
@@ -11,12 +14,20 @@ body {
     width: 98.7vw;
     height: 100vh;
 }
+/* Defini estilização comum para os elementos da classe gradiente. */
+.gradiente {
+    color: transparent;
+    /* Defini uma cor de fundo. */
+    background-image: linear-gradient(#1472B7, #33A8DB);
+    background-clip: text;
+    /* Utilizado para que funcione em navegadores que não são compatíveis com a propriedade background-clip. */
+    -webkit-background-clip: text;
+}
 /* Definições gerais do cabeçalho */
-/* Defini uma imagem e três cores de funco. Adiciona uma borda inferior e defini a altura do container. */
+/* Defini uma imagem e três cores de fundo. Adiciona uma borda inferior e defini a altura do container. */
 .banner {
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url(../images/banner.png);
-    width: inherit;
-    height: 97%;
+    height: 100%;
     border-bottom: 1px solid #33A8DB;
 }
 /* Centraliza os elementos do container. */
@@ -33,41 +44,34 @@ body {
     width: 13.5rem;
     margin: auto;
 }
-
+/* Estiliza o título do cabeçalho */
 .banner-content h1 {
     text-align: center;
     font-size: 2.2rem;
     font-weight: 900;
     text-transform: uppercase;
-    color: transparent;
-    /* Defini uma cor de fundo para o elemento h1. */
-    background: -webkit-linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
-    background-clip: text;
-    /* Utilizada a regra para que funcione em todos os navegadores. */
-    -webkit-background-clip: text;
+    
+    /* Defini uma cor de fundo para o título. */
+    background-image: -webkit-linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
     padding-bottom: 15px;
-    margin-top: 25px;
+    margin-top: 20px;
 }
-
+/* Centraliza o parágrafo e defini a cor e tamanho da fonte. */
 .banner-content p {
     text-align: center;
     color: white;
     font-size: 1.2rem;
 }
-
+/* Estiliza o botão do cabeçalho. */
 .banner-content button {
     padding: 15px 25px;
     display: block;
     margin: 1.5rem auto;
-    font-size: 16px;
+    font-size: 1.1rem;
     font-weight: 700;
-    color: transparent;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     border: 2px solid #33A8DB;
-    background: linear-gradient(#1472B7, #33A8DB);
-    background-clip: text;
-    -webkit-background-clip: text;
 }
 /* Defini a largura, espaçamento e centraliza os elementos da seção. */
 #course-content {
@@ -79,10 +83,6 @@ body {
 #course-content h2 {
     font-size: 2rem;
     text-transform: uppercase;
-    color: transparent;
-    background-image: linear-gradient(#1472B7, #33A8DB);
-    background-clip: text;
-    -webkit-background-clip: text;
     letter-spacing: 2px;
     margin: 15px 0;
 }
@@ -96,25 +96,26 @@ body {
     border: 1px solid #33A8DB;
     border-radius: 30px;
     margin: 20px auto;
-    padding: 16px 0;
+    padding: 16px 12px;
     color: white;
     background-color: #222;
+    /* Defini uma sombra interna para o elemento. */
     box-shadow: inset -5px 6px 8px rgba(0, 0, 0, 0.7);
 }
 .module span {
     color: #33A8DB;
 }
-/* Adiciona uma imagem de fundo e defini as configuração gerais da seção do conteúdo principal. */
+/* Adiciona uma imagem de fundo e defini as configuração gerais da segunda seção do conteúdo principal. */
 #transform-world {
     background-image: url(../images/woman-code.png);
     background-size: cover;
     background-position: center top;
     background-attachment: fixed;
-    height: 35rem;
+    height: 32rem;
     border-bottom: 1px solid #33A8DB;
     border-top: 1px solid #33A8DB;
 }
-/* Estiliza o elemento <p> na seção do conteúdo principal. */
+/* Estiliza o parágrafo na segunda seção do conteúdo principal. */
 #transform-world p {
     color: white;
     font-size: 2rem;
@@ -124,31 +125,29 @@ body {
     position: relative;
     left: 100px;
     top: 200px;
+    /* Defini uma sombra para o texto do parágrafo. */
     text-shadow: 2px 2px 1px #33A8DB;
     line-height: 40px;
 }
 /* Estilização da terceira seção do conteúdo principal. */
 #professional-challenges {
+    /* Centraliza os textos da seção. */
     text-align: center;
     padding: 50px;
     border-bottom: 1px solid #33A8DB;
 }
-
+/* Estiliza o título da terceira seção do conteúdo principal. */
 #professional-challenges h2 {
     font-size: 2.5rem;
     width: 75%;
     margin: auto;
     padding: 30px 0 50px;
-    color: transparent;
-    background-image: linear-gradient(#1472B7, #33A8DB);
-    background-clip: text;
-    -webkit-background-clip: text;
 }
-
+/* Defini o tamanho da imagem. */
 #professional-challenges img {
     width: 70%;
 }
-
+/* Configurações do parágrafo da terceira seção do conteúdo principal da página. */
 #professional-challenges p {
     color: white;
     width: 90%;
