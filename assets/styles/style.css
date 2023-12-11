@@ -5,17 +5,19 @@
     margin: 0;
     box-sizing: border-box;
 }
-/* Adiciona uma cor de fundo para a página. */
+/* Adiciona uma cor de fundo para a página. Defini a altura e largura do container da página. */
 body {
     background: rgba(0, 0, 0);
+    width: 98.7vw;
+    height: 100vh;
 }
-
 /* Definições gerais do cabeçalho */
 /* Defini uma imagem e três cores de funco. Adiciona uma borda inferior e defini a altura do container. */
 .banner {
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url(../images/banner.png);
+    width: inherit;
+    height: 97%;
     border-bottom: 1px solid #33A8DB;
-    height: 540px;
 }
 /* Centraliza os elementos do container. */
 .banner-content {
@@ -28,8 +30,8 @@ body {
 /* Centraliza a imagem do container. */
 .logo img {
     display: block;
+    width: 13.5rem;
     margin: auto;
-    width: 200px;
 }
 
 .banner-content h1 {
@@ -38,25 +40,25 @@ body {
     font-weight: 900;
     text-transform: uppercase;
     color: transparent;
-    /* Defini uma cor de funcopara o elemento h1. */
+    /* Defini uma cor de fundo para o elemento h1. */
     background: -webkit-linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+    background-clip: text;
     /* Utilizada a regra para que funcione em todos os navegadores. */
     -webkit-background-clip: text;
     padding-bottom: 15px;
-    margin-top: 45px;
+    margin-top: 25px;
 }
 
 .banner-content p {
     text-align: center;
     color: white;
-    width: 37rem;
     font-size: 1.2rem;
 }
 
 .banner-content button {
     padding: 15px 25px;
     display: block;
-    margin: 2.5rem auto;
+    margin: 1.5rem auto;
     font-size: 16px;
     font-weight: 700;
     color: transparent;
@@ -64,12 +66,12 @@ body {
     letter-spacing: 0.2rem;
     border: 2px solid #33A8DB;
     background: linear-gradient(#1472B7, #33A8DB);
+    background-clip: text;
     -webkit-background-clip: text;
 }
 /* Defini a largura, espaçamento e centraliza os elementos da seção. */
 #course-content {
-    width: 62%;
-    padding: 70px 0;
+    padding: 60px;
     margin: auto;
     text-align: center;
 }
@@ -79,18 +81,18 @@ body {
     text-transform: uppercase;
     color: transparent;
     background-image: linear-gradient(#1472B7, #33A8DB);
+    background-clip: text;
     -webkit-background-clip: text;
     letter-spacing: 2px;
     margin: 15px 0;
 }
 #course-content p {
     color: white;
-    font-size: 16px;
     padding: 10px 0;
 }
 /* Estilização dos botões da primeira seção do elemento main. */
 .modules-list .module {
-    width: 530px;
+    width: 70%;
     border: 1px solid #33A8DB;
     border-radius: 30px;
     margin: 20px auto;
@@ -108,7 +110,7 @@ body {
     background-size: cover;
     background-position: center top;
     background-attachment: fixed;
-    height: 520px;
+    height: 35rem;
     border-bottom: 1px solid #33A8DB;
     border-top: 1px solid #33A8DB;
 }
@@ -139,14 +141,19 @@ body {
     padding: 30px 0 50px;
     color: transparent;
     background-image: linear-gradient(#1472B7, #33A8DB);
+    background-clip: text;
     -webkit-background-clip: text;
+}
+
+#professional-challenges img {
+    width: 70%;
 }
 
 #professional-challenges p {
     color: white;
-    width: 70%;
+    width: 90%;
     margin: auto;
-    padding: 25px 0 35px;
+    padding: 25px 0;
 }
 /* Estilização do rodapé da página. */
 footer {
